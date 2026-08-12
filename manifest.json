@@ -1,0 +1,47 @@
+{
+  "build": "skyhills-casino",
+  "title": "Skyhills Casino Geluksrad — Champagne",
+  "entrypoint": "index.html",
+  "language": "nl",
+  "offer": {
+    "bonus": "€ 4,000 + 100 FS",
+    "tracker": "https://tmhh7.com/LPzj3Kzn",
+    "google_ads_conversion": "AW-18125271250/4qCBCPSTsdwcENLh5sJD"
+  },
+  "local_assets": [
+    "assets/brand/bg-desktop.webp",
+    "assets/brand/bg-mobile.webp",
+    "assets/brand/logo.png",
+    "assets/royal/spin-button-glass-512.png",
+    "assets/fonts/manrope-latin.woff2",
+    "assets/fonts/manrope-latin-ext.woff2",
+    "assets/fonts/manrope-cyrillic.woff2",
+    "assets/system/i18n.json",
+    "styles.css",
+    "app.js"
+  ],
+  "concept_notes": [
+    "Premium metallic frame with a clockwise animated circus-style bulb chase.",
+    "Bright glossy green center button with a gold bezel and controlled glow.",
+    "The green glazed glass button texture is derived from the supplied visual reference; live text remains HTML.",
+    "High-saturation ruby-red and luminous-gold sectors with strong contrast.",
+    "Currency and free-spin units are sized to 50 percent of their numeric values.",
+    "The crown is removed; the logo and Dutch two-line headline are shifted lower for a cleaner responsive composition.",
+    "Fluid spacing separates the logo from the headline and the wheel from the attempts card on desktop and mobile.",
+    "The center spin control is enlarged so its label remains fully legible on compact screens.",
+    "Retry and claim actions use the same green glazed-glass treatment and gold frame as the center control.",
+    "Local Manrope variable-font files provide smooth and consistent typography on every host.",
+    "The 100 and 4,000 values are reduced by 20% and share the same font size.",
+    "The bulb chase uses substantially brighter circular cores and a multi-stage yellow-gold halo without moving overlay layers.",
+    "The wheel rotor uses a dedicated compositor layer and the bulb chase animates opacity only for smoother frame pacing.",
+    "The responsive gap between the headline and wheel is increased.",
+    "The selector remains completely stationary while the wheel rotates beneath it.",
+    "Sector labels use taller line boxes, unclipped glyphs and softer shadows so descenders remain fully visible.",
+    "The fixed translucent winner-beam overlay is removed so no phantom sector appears during rotation.",
+    "Wheel values are enlarged by roughly 35 to 40 percent and labels by roughly 50 percent.",
+    "CSS-built wheel graphics remain crisp at every screen size.",
+    "Two-stage spin, popups, saved win state, conversion tracking and redirect are preserved."
+    ,"The reward modal uses a champagne-gold fill with restrained burgundy-red accents for an A/B color test.",
+    "A small semicircle of card-suit icons adds casino character above the premium-reward label."
+  ]
+}

@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#160000">
+    <link rel="preload" as="image" href="./assets/royal/spin-button-glass-512.png?v=skyhills-1" type="image/png">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18125271250"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag("js", new Date());
+      gtag("config", "AW-18125271250");
+
+      function gtag_report_conversion(url) {
+        let completed = false;
+        const callback = function () {
+          if (completed) return;
+          completed = true;
+          if (typeof url !== "undefined") window.location = url;
+        };
+        window.setTimeout(callback, 1500);
+        gtag("event", "conversion", {
+          send_to: "AW-18125271250/4qCBCPSTsdwcENLh5sJD",
+          value: 1.0,
+          currency: "USD",
+          event_callback: callback,
+          event_timeout: 1200
+        });
+        return false;
+      }
+    </script>
+    <link rel="icon" href="./assets/brand/logo.png?v=skyhills-1" type="image/png">
+    <link rel="stylesheet" href="./styles.css?v=skyhills-1">
+    <title>Skyhills Casino Geluksrad — Champagne</title>
+    <script src="./app.js?v=skyhills-1" defer></script>
+  </head>
+  <body>
+    <main class="landing" id="landing">
+      <div class="landing__veil" aria-hidden="true"></div>
+      <div class="landing__content">
+        <header class="brand">
+          <img src="./assets/brand/logo.png?v=skyhills-1" alt="Skyhills Casino">
+        </header>
+
+        <div class="royal-heading" aria-label="Draai aan het rad en pak je bonus">
+          <span>Draai aan het rad</span>
+          <strong>Pak je bonus</strong>
+        </div>
+
+        <section class="game-stage" aria-label="Geluksrad">
+          <div class="wheel-shell" id="wheelShell">
+            <div class="bulb-ring" id="bulbRing" aria-hidden="true"></div>
+            <div class="wheel-well" aria-hidden="true"></div>
+
+            <div class="wheel-rotor" id="wheelRotor">
+              <div class="wheel-sheen" aria-hidden="true"></div>
+
+              <div class="segment" style="--segment-index: 0">
+                <div class="segment__content">
+                  <strong class="segment__value">+2</strong>
+                  <span class="segment__label" data-copy="wheel-plus">Kansen</span>
+                </div>
+              </div>
+              <div class="segment" style="--segment-index: 1">
+                <div class="segment__content segment__content--single">
+                  <span class="segment__label" data-copy="wheel-retry">Opnieuw</span>
+                </div>
+              </div>
+              <div class="segment" style="--segment-index: 2">
+                <div class="segment__content">
+                  <strong class="segment__value" data-bonus="first-top">4,000</strong>
+                  <span class="segment__label" data-bonus="first-bottom">€</span>
+                </div>
+              </div>
+              <div class="segment" style="--segment-index: 3">
+                <div class="segment__content segment__content--single">
+                  <span class="segment__label" data-copy="wheel-empty">Leeg</span>
+                </div>
+              </div>
+              <div class="segment" style="--segment-index: 4">
+                <div class="segment__content">
+                  <strong class="segment__value">+2</strong>
+                  <span class="segment__label" data-copy="wheel-plus">Kansen</span>
+                </div>
+              </div>
+              <div class="segment" style="--segment-index: 5">
+                <div class="segment__content segment__content--single">
+                  <span class="segment__label" data-copy="wheel-retry">Opnieuw</span>
+                </div>
+              </div>
+              <div class="segment" style="--segment-index: 6">
+                <div class="segment__content">
+                  <strong class="segment__value" data-bonus="second-top">100</strong>
+                  <span class="segment__label" data-bonus="second-bottom">FS</span>
+                </div>
+              </div>
+              <div class="segment" style="--segment-index: 7">
+                <div class="segment__content segment__content--single">
+                  <span class="segment__label" data-copy="wheel-empty">Leeg</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="winner-beam" aria-hidden="true"></div>
+            <div class="selector" aria-hidden="true">
+              <span class="selector__gem"></span>
+            </div>
+
+            <button class="spin-button" id="spinButton" type="button">
+              <span class="spin-button__shine" aria-hidden="true"></span>
+              <span data-copy="spin-button">Draaien</span>
+            </button>
+          </div>
+        </section>
+
+        <section class="status-card" aria-live="polite">
+          <h1 data-copy="main-title">Draai en win!</h1>
+          <p><span data-copy="attempts-label">Pogingen over:</span> <strong id="counter">2</strong></p>
+        </section>
+      </div>
+    </main>
+
+    <div class="modal" id="firstPopup" role="dialog" aria-modal="true" aria-hidden="true">
+      <div class="modal__panel">
+        <div class="modal__suits" aria-hidden="true">
+          <span>♠</span><span>♥</span><span>♣</span><span>♦</span>
+        </div>
+        <span class="modal__eyebrow">EXCLUSIEVE BELONING</span>
+        <h2 data-copy="popup-title">Gefeliciteerd!</h2>
+        <p class="modal__reward">
+          <span data-copy="popup-prefix">Je winst:</span>
+          <strong id="firstReward">€ 4,000</strong>
+        </p>
+        <button class="modal__button" id="retryButton" type="button" data-copy="retry-button">
+          Nog een keer
+        </button>
+      </div>
+    </div>
+
+    <div class="modal" id="secondPopup" role="dialog" aria-modal="true" aria-hidden="true">
+      <div class="modal__panel">
+        <div class="modal__suits" aria-hidden="true">
+          <span>♠</span><span>♥</span><span>♣</span><span>♦</span>
+        </div>
+        <span class="modal__eyebrow">EXCLUSIEVE BELONING</span>
+        <h2 data-copy="popup-title">Gefeliciteerd!</h2>
+        <p class="modal__reward modal__reward--final">
+          <span id="finalRewardPrefix">Je winst: € 4,000</span>
+          <strong id="finalRewardValue">+ 100 FS</strong>
+        </p>
+        <a class="modal__button" id="claimButton" href="#">
+          <span data-copy="claim-button">Bonus ophalen</span>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
